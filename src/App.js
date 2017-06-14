@@ -20,45 +20,24 @@ class App extends Component {
   }
 
   addTodo(todoText) {
-    console.log("add todo:", todoText);
-
-    const newTodo = {
-      text: todoText,
-      id: Date.now(),
-    };
-
-    const newTodos = [
-      ...this.state.todos,
-      newTodo
-    ];
-
-    this.setState({todos: newTodos});
+ 
   }
 
   removeTodo(todoId) {
-    console.log("remove todo:", todoId);
-
-    const newTodos = this.state.todos.filter(todo => todo.id !== todoId);
-
-    this.setState({todos: newTodos});
+ 
   }
 
   render() {
     return (
       <div className="App">
-        <Header title="React Todo"/>
+        <Header/>
         
         <div className="App-TodoWrapper">
           <div className="App-TodoForm-wrapper">
-            <TodoForm
-              addTodo={this.addTodo}
-            />
+            <TodoForm/>
           </div>
           <div className="App-TodoList-wrapper">
-            <TodoList
-              todos={this.state.todos}
-              removeTodo={this.removeTodo}
-            />
+            <TodoList/>
           </div>
         </div>
       </div>

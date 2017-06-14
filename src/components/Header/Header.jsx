@@ -1,14 +1,8 @@
 import React from 'react';
 import './Header.css';
 
-const Header = function({title}) {
-  return (
-    <header className="Header">
-      <h1>
-        {title}
-      </h1>
-    </header>
-  );
+const Header = function(props) {
+  return <div/>
 };
 
 export default Header;
