@@ -1,0 +1,7 @@
+.Todo {
+  cursor: pointer;
+}
+
+.Todo:hover {
+  text-decoration: line-through;
+}
